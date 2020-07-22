@@ -4,6 +4,7 @@ class Artist
 
   extend Memorable
   extend Findable
+  extend Paramable
 
   attr_accessor :name
   attr_reader :songs
@@ -27,5 +28,5 @@ class Artist
   def add_songs(songs)
     songs.each { |song| add_song(song) }
   end
-  
+
 end
